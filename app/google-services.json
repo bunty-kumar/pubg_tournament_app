@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "515138459407",
+    "project_id": "bgmi-tournament-3854d",
+    "storage_bucket": "bgmi-tournament-3854d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515138459407:android:69df117e60f38e00fb907a",
+        "android_client_info": {
+          "package_name": "com.bunty.pubgtournament"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515138459407-o0tcunj31jr8idjn2g5m1lkir03be12v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXO1EBU3QVu07Msy4FmyuhG_uIlwlemMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515138459407-o0tcunj31jr8idjn2g5m1lkir03be12v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

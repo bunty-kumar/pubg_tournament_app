@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".AdminApp.upload.UploadMatch">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/custom_card"
+        >
+
+        <EditText
+            android:id="@+id/refId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="refrence id"
+            android:textColorHint="@color/darkgrey"
+            android:textColor="@color/darkgrey"
+            android:layout_marginLeft="16dp"
+            android:padding="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/custom_edittext"/>
+
+        <EditText
+            android:id="@+id/roomId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="room id"
+            android:padding="10dp"
+            android:textColorHint="@color/darkgrey"
+            android:textColor="@color/darkgrey"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <EditText
+            android:id="@+id/roomPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="room pass"
+            android:textColorHint="@color/darkgrey"
+            android:textColor="@color/darkgrey"
+            android:padding="10dp"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/drop1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginLeft="16dp"
+            android:padding="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="16dp"
+            >
+            <Spinner
+                android:id="@+id/matchCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/idPasSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_btn"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

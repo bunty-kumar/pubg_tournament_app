@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bunty.pubgtournament">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PubgTournament"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".BuyTickit"
+            android:exported="true"
+           />
+        <activity
+            android:name=".UserApp.UserEvening"
+            android:exported="true" />
+        <activity
+            android:name=".UserApp.UserAfternoon"
+            android:exported="true" />
+        <activity
+            android:name=".UserApp.UserMorning"
+            android:exported="true" />
+        <activity
+            android:name=".UserApp.ForgotPassword"
+            android:exported="true"
+            android:theme="@style/noActionBar"
+            />
+        <activity
+            android:name=".ChooseWho"
+            android:exported="true"
+            android:theme="@style/noActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserApp.UserDashboard"
+            android:exported="true" />
+        <activity
+            android:name=".UserApp.Login"
+            android:exported="true"
+            android:theme="@style/noActionBar"/>
+        <activity
+            android:name=".UserApp.SignUp"
+            android:exported="true"
+            android:theme="@style/noActionBar"/>
+        <activity
+            android:name=".AdminApp.match.AssignedTickit"
+            android:exported="true" />
+        <activity
+            android:name=".AdminApp.delete.AfternoonActivity"
+            android:exported="true"
+            android:parentActivityName=".AdminApp.delete.DeleteMatch" />
+        <activity
+            android:name=".AdminApp.delete.EveningActivity"
+            android:exported="true"
+            android:parentActivityName=".AdminApp.delete.DeleteMatch" />
+        <activity
+            android:name=".AdminApp.delete.MorningActivity"
+            android:exported="true"
+            android:parentActivityName=".AdminApp.delete.DeleteMatch" />
+        <activity
+            android:name=".AdminApp.upload.UploadMatch"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AdminApp.delete.DeleteMatch"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AdminApp.match.CreateMatch"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
